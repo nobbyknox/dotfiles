@@ -12,7 +12,7 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " utilities
-" Plugin 'kien/ctrlp.vim' " fuzzy find files
+Plugin 'kien/ctrlp.vim' " fuzzy find files
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 " Plugin 'benmills/vimux'
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
@@ -144,7 +144,7 @@ nmap <silent> <leader>k :NERDTreeToggle<cr>
 nmap <silent> <leader>y :NERDTreeFind<cr>
 
 " map fuzzyfinder (CtrlP) plugin
-" nmap <silent> <leader>t :CtrlP<cr>
+nmap <silent> <leader>t :CtrlP<cr>
 nmap <silent> <leader>r :CtrlPBuffer<cr>
 let g:ctrlp_map='<leader>t'
 let g:ctrlp_dotfiles=1
