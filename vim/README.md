@@ -11,3 +11,11 @@ Install the plugins:
 ```
 vim +PluginInstall +qall
 ```
+
+You might want to install macvim's vim to override the system vim. Do:
+
+```
+brew install macvim --with-override-system-vim
+```
+
+See http://superuser.com/questions/334252/the-best-way-to-make-macvims-vim-console-not-mvim-the-default-instead-of-mac for more details.
