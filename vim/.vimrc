@@ -22,6 +22,7 @@ Plugin 'itchyny/lightline.vim'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
+Plugin 'brendonrapp/smyck-vim'
 
 " JavaScript plugins
 Plugin 'pangloss/vim-javascript'
@@ -81,7 +82,8 @@ set encoding=utf8
 let base16colorspace=256  " Access colors present in 256 colorspace"
 set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors"
 set background=dark
-colorscheme delek
+" colorscheme delek
+colorscheme smyck
 
 set number
 
