@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/nobbyk/.oh-my-zsh
 
+DEFAULT_USER="nobbyk"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -88,5 +90,5 @@ source $ZSH/oh-my-zsh.sh
 bindkey -v
 
 # Node Version Manager
-export NVM_DIR="/Users/nobby/.nvm"
+export NVM_DIR="/Users/nobbyk/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
