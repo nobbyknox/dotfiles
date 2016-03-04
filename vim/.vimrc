@@ -19,6 +19,7 @@ Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
 Plugin 'ervandew/supertab'
 Plugin 'itchyny/lightline.vim'
+Plugin 'vim-scripts/vim-auto-save'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -39,6 +40,9 @@ set backspace=indent,eol,start
 
 " set a map leader for more key combos
 let mapleader = ','
+
+let g:auto_save = 1  " enable auto save
+let g:auto_save_in_insert_mode = 0  " do not save while in insert mode
 
 " Tab control
 set expandtab " tabs ftw
