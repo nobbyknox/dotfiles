@@ -1,11 +1,15 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/nobby/.oh-my-zsh
 
+DEFAULT_USER="nobby"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+# ZSH_THEME="agnoster"
+ZSH_THEME="amuse"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -86,6 +90,6 @@ source $ZSH/oh-my-zsh.sh
 # vi mode
 bindkey -v
 
-# Node Version Manager
+# Node version manager stuff
 export NVM_DIR="/Users/nobby/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
