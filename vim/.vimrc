@@ -20,6 +20,7 @@ Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual
 Plugin 'ervandew/supertab'
 Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/vim-auto-save'
+Plugin 'airblade/vim-gitgutter'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
