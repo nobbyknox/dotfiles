@@ -104,6 +104,7 @@ set laststatus=2 " show the satus line all the time
 map <leader>ev :e! ~/.vimrc<cr> " edit ~/.vimrc
 
 map <leader>wc :wincmd q<cr>
+map <leader>q :wincmd q<cr>
 
 " moving up and down work as you would expect
 nnoremap <silent> j gj
