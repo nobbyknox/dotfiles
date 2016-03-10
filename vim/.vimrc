@@ -105,6 +105,9 @@ map <leader>ev :e! ~/.vimrc<cr> " edit ~/.vimrc
 
 map <leader>wc :wincmd q<cr>
 map <leader>q :wincmd q<cr>
+map <leader>git :GitGutterToggle<cr>
+map <leader>gn :GitGutterNextHunk<cr>
+map <leader>gp :GitGutterPrevHunk<cr>
 
 " moving up and down work as you would expect
 nnoremap <silent> j gj
