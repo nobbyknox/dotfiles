@@ -21,6 +21,7 @@ Plugin 'ervandew/supertab'
 Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/vim-auto-save'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'jlanzarotta/bufexplorer'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -108,6 +109,7 @@ map <leader>q :wincmd q<cr>
 map <leader>git :GitGutterToggle<cr>
 map <leader>gn :GitGutterNextHunk<cr>
 map <leader>gp :GitGutterPrevHunk<cr>
+map <leader>, <C-^>
 
 " moving up and down work as you would expect
 nnoremap <silent> j gj
