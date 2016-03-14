@@ -15,13 +15,15 @@ Plugin 'gmarik/vundle'
 Plugin 'kien/ctrlp.vim' " fuzzy find files
 Plugin 'scrooloose/nerdtree' " file drawer, open with :NERDTreeToggle
 " Plugin 'benmills/vimux'
-Plugin 'tpope/vim-fugitive' " the ultimate git helper
 Plugin 'tpope/vim-commentary' " comment/uncomment lines with gcc or gc in visual mode
 Plugin 'ervandew/supertab'
 Plugin 'itchyny/lightline.vim'
 Plugin 'vim-scripts/vim-auto-save'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'jlanzarotta/bufexplorer'
+
+" git stuff
+Plugin 'tpope/vim-fugitive' " the ultimate git helper
+Plugin 'airblade/vim-gitgutter'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
@@ -110,6 +112,7 @@ map <leader>git :GitGutterToggle<cr>
 map <leader>gn :GitGutterNextHunk<cr>
 map <leader>gp :GitGutterPrevHunk<cr>
 map <leader>, <C-^>
+map <leader>w :bd<cr>
 
 " moving up and down work as you would expect
 nnoremap <silent> j gj
