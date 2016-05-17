@@ -87,6 +87,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias l='ls -lh | less -eFX'
+alias ll='ls -lah | less -eFX'
+alias la='ls -lah | less -eFX'
+alias lt='ls -lht | less -eFX'
+alias ltt='ls -laht | less -eFX'
+
 # vi mode
 bindkey -v
 
