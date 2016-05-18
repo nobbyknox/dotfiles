@@ -1,0 +1,55 @@
+[user]
+    name = Nobby Knox
+    email = nobby@ecn.co.za
+[core]
+#    editor = mate -w
+    editor = vim
+    autocrlf = input
+    excludesfile = /Users/nobbyk/.gitignore_global
+    quotepath = false
+[color]
+    ui = true
+[alias]
+    amend = commit -a --amend
+    co = checkout
+    cob = checkout -b
+    ci = commit --verbose
+    ec = config --global -e
+    st = status
+    br = branch
+    brv = branch -vv
+    brr = branch -r
+    pp = pull && push
+    hist = log --pretty=format:'%C(red)%h%C(reset) %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(cyan)— %an%C(reset)%C(bold yellow)%d%C(reset)' --graph --date=relative
+    hist2 = log --pretty=format:'%C(red)%h%C(reset) %C(green)(%ad)%C(reset) %C(white)%s%C(reset) %C(bold blue)— %an%C(reset)%C(yellow)%d%C(reset)' --graph --date=local
+    hist3 = log --pretty=format:'%h %s — %an%d' --graph --date=local
+    hist4 = log --pretty=format:'%C(red)%h%C(reset) %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold blue)— %an%C(reset)%C(yellow)%d%C(reset)' --graph --date=relative
+
+    # Temporary save and resume. See http://haacked.com/archive/2014/07/28/github-flow-aliases/
+    save = !git add -A && git commit -m 'SAVEPOINT'
+    resume = reset HEAD~1 --mixed
+
+    # Pull from origin and rebases my local commits after the incoming commits. Then, remove any remote-tracking branches that no longer exist on the remote.
+    up = pull --rebase --prune
+
+    # 1. Switches to sprint (though you can specify a different default branch)
+    # 2. Runs git up to bring sprint up to speed with the origin
+    # 3. Deletes all branches already merged into sprint using another alias, git bclean
+    #bdone = "!f() { git checkout ${1-sprint} && git up && git bclean ${1-sprint}; }; f"
+    #bclean = "!f() { git branch --merged ${1-sprint} | grep -v " ${1-sprint}$" | xargs -r git branch -d; }; f"
+
+    # Commit the current changes and resets to previous commit
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+
+    # Shows committers and their commit count
+    who = shortlog -sn --
+[pull]
+    default = simple
+[push]
+    default = simple
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
