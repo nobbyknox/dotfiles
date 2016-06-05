@@ -10,6 +10,7 @@
 [color]
     ui = true
 [alias]
+    aliases = config --get-regexp alias
     amend = commit -a --amend
     co = checkout
     cob = checkout -b
@@ -24,6 +25,7 @@
     hist2 = log --pretty=format:'%C(red)%h%C(reset) %C(green)(%ad)%C(reset) %C(white)%s%C(reset) %C(bold blue)— %an%C(reset)%C(yellow)%d%C(reset)' --graph --date=local
     hist3 = log --pretty=format:'%h %s — %an%d' --graph --date=local
     hist4 = log --pretty=format:'%C(red)%h%C(reset) %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(bold blue)— %an%C(reset)%C(yellow)%d%C(reset)' --graph --date=relative
+    fh = log --format=format:'%C(bold cyan)%ar %C(reset) %C(green)%f' --name-status 
 
     # Temporary save and resume. See http://haacked.com/archive/2014/07/28/github-flow-aliases/
     save = !git add -A && git commit -m 'SAVEPOINT'
