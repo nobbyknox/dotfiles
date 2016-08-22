@@ -87,14 +87,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias l='ls -lh | less -ieFX'
-alias ll='ls -lah | less -ieFX'
-alias la='ls -lah | less -ieFX'
-alias lt='ls -lht | less -ieFX'
-alias ltt='ls -laht | less -ieFX'
+# alias l='ls -lh | less -ieFX'
+# alias ll='ls -lah | less -ieFX'
+# alias la='ls -lah | less -ieFX'
+# alias lt='ls -lht | less -ieFX'
+# alias ltt='ls -laht | less -ieFX'
 
 # vi mode
 bindkey -v
+
+# Include a few functions
+source ~/.functions.sh
 
 # Node version manager stuff
 export NVM_DIR="/Users/nobby/.nvm"
