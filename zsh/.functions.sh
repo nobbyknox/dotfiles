@@ -19,3 +19,8 @@ fla()
 {
     ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
 }
+
+top_5()
+{
+    history | awk '{print $2}' | sort | uniq -c | sort -nr | head -5
+}
