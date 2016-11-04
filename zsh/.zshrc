@@ -93,6 +93,8 @@ source $ZSH/oh-my-zsh.sh
 # alias lt='ls -lht | less -ieFX'
 # alias ltt='ls -laht | less -ieFX'
 
+alias prettyjson='python -mjson.tool'
+
 # vi mode
 bindkey -v
 
