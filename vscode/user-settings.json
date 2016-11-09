@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Controls the font size in pixels.
+    "editor.fontSize": 14,
+
+    // Columns at which to show vertical rulers
+    "editor.rulers": [],
+
+    // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
+    "files.autoSave": "onFocusChange"
+
+}

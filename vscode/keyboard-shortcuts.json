@@ -1,0 +1,12 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "cmd+backspace",
+        "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    }
+]
