@@ -12,12 +12,12 @@ say_hello()
 
 fl()
 {
-    CLICOLOR_FORCE=1 ls -lh $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
+    ls -lh --color $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
 }
 
 fla()
 {
-    CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
+    ls -lah --color $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
 }
 
 top_5()
