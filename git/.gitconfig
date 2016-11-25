@@ -6,7 +6,7 @@
     editor = vim
     autocrlf = input
     excludesfile = /Users/nobby/.gitignore_global
-    quotepath = false
+	quotepath = false
 [color]
     ui = true
 [alias]
