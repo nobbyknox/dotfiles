@@ -28,5 +28,15 @@
         "key": "ctrl+y",
         "command": "scrollLineUp",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
     }
 ]
