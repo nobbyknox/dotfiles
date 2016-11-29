@@ -38,5 +38,13 @@
         "key": "alt+j",
         "command": "editor.action.insertCursorBelow",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.navigateForward"
     }
 ]
