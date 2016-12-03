@@ -1,5 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
+    // Controls the font family.
+    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+
     // Controls the font size in pixels.
     "editor.fontSize": 14,
 
@@ -9,5 +12,6 @@
     // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
     "files.autoSave": "onFocusChange",
 
+    // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
     "window.zoomLevel": 0
 }
