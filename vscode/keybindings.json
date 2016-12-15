@@ -20,6 +20,10 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
+        "key": "cmd-l",
+        "command": "workbench.action.gotoLine"
+    },
+    {
         "key": "ctrl+e",
         "command": "scrollLineDown",
         "when": "editorTextFocus"
