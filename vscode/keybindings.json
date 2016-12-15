@@ -20,10 +20,6 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "cmd-l",
-        "command": "workbench.action.gotoLine"
-    },
-    {
         "key": "ctrl+e",
         "command": "scrollLineDown",
         "when": "editorTextFocus"
@@ -52,7 +48,12 @@
         "command": "workbench.action.navigateForward"
     },
     {
-        "key": "alt+cmd+l",
+        "key": "alt-cmd-/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt-cmd-l",
         "command": "editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
     }
