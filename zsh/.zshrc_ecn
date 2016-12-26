@@ -101,6 +101,10 @@ bindkey -v
 # Include a few functions
 source ~/dotfiles/zsh/.functions.sh
 
+export PROMPT='
+[%m] %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) ⌚ %{$fg_bold[red]%}%*%{$reset_color%}
+$ '
+
 # Node Version Manager
 export NVM_DIR="/Users/nobbyk/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
