@@ -92,5 +92,9 @@ alias ll='ls -lah'
 # vi mode
 bindkey -v
 
+export PROMPT='
+[%m] %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) ⌚ %{$fg_bold[red]%}%*%{$reset_color%}
+$ '
+
 export NVM_DIR="/home/pi/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
