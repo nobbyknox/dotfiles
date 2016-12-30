@@ -25,6 +25,11 @@ top_5()
     history | awk '{print $2}' | sort | uniq -c | sort -nr | head -5
 }
 
+net_mon()
+{
+    nload -a 10 -u h
+}
+
 net_scan()
 {
     sudo nmap -sP 192.168.10.0/24
