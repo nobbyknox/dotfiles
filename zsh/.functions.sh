@@ -27,7 +27,7 @@ top_5()
 
 net_mon()
 {
-    nload -a 10 -u h
+    nload -a 10 -u M
 }
 
 net_scan()
