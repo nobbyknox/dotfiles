@@ -246,7 +246,7 @@
 	<key>Default Arrangement Name</key>
 	<string>Small left bottom</string>
 	<key>Default Bookmark Guid</key>
-	<string>8FC43349-E0F8-4D35-840E-4A9AE82BF430</string>
+	<string>764BF764-5EAB-4E34-9A93-D4BC06DFE639</string>
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DimInactiveSplitPanes</key>
@@ -451,9 +451,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>1709 27 599 388 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1496 332 918 381 1440 -180 1920 1057 </string>
+	<string>1496 235 918 512 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1440 -160 810 379 1440 -180 1920 1057 </string>
+	<string>2747 454 562 379 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1440 -180 1920 1080 1440 -180 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -5196,7 +5196,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-23T12:01:17Z</date>
+	<date>2016-12-25T15:04:43Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
