@@ -57,7 +57,7 @@ plugins=(git osx)
 
 # User configuration
 
-export PATH="/Users/nobby/.nvm/versions/node/v5.2.0/bin:/Users/nobbyk/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin:/Users/nobby/Apps/mongo/bin"
+export PATH="/Users/nobby/.nvm/versions/node/v5.2.0/bin:/Users/nobbyk/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
