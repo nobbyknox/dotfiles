@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while read url; do
+  echo "Downloading $url"
+  aria2c --continue -x 5 $url
+done < $1
