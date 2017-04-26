@@ -12,6 +12,12 @@ Install the plugins:
 vim +PluginInstall +qall
 ```
 
+After some time you might want to upgrade the installed plugins. Use this command:
+
+```
+vim +PluginUpdate +qall
+```
+
 You might want to install macvim's vim to override the system vim. Do:
 
 ```
