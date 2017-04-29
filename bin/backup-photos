@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rsync -avP /Volumes/Elements/ /Volumes/ADATA01/Backup/Photos
