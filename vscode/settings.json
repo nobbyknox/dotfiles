@@ -15,8 +15,12 @@
     // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
     "window.zoomLevel": 0,
     "git.confirmSync": false,
-    "editor.wordWrap": false,
+    "editor.wordWrap": "off",
+
+    // Render the actual characters on a line (as opposed to color blocks)
+    "editor.minimap.renderCharacters": false,
 
     // Controls if the minimap is shown
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": true
 }
+
