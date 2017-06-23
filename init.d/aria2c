@@ -1,0 +1,35 @@
+#!/bin/bash
+# /etc/init.d/aria2
+
+### BEGIN INIT INFO
+# Provides:          aria2
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Aria2 download server
+# Description:       Aria2 download server
+### END INIT INFO
+
+ARIA2=/usr/bin/aria2c
+OPTIONS='--enable-rpc=true --rpc-listen-all=true --rpc-user=lion --rpc-passwd=mountainlion -x5 -j1'
+USER=pi
+OUT=/var/log/aria2c.log
+
+case "$1" in
+
+start)
+        echo "starting aria2c: $ARIA2 $OPTIONS"
+        cd /media/usb
+        sudo -u $USER $ARIA2 $OPTIONS > $OUT 2>$OUT &
+        ;;
+
+stop)
+        killall $ARIA2
+        ;;
+
+*)
+        echo "usage: $0 (start|stop)"
+esac
+
+exit 0
