@@ -23,7 +23,6 @@ Plugin 'jlanzarotta/bufexplorer'
 
 " git stuff
 Plugin 'tpope/vim-fugitive' " the ultimate git helper
-Plugin 'airblade/vim-gitgutter'
 
 " colorschemes
 Plugin 'chriskempson/base16-vim'
