@@ -96,7 +96,7 @@ alias ltt='ls -laht | less -ieFX'
 alias prettyjson='python -mjson.tool'
 
 alias dk='docker'
-alias dps='docker ps'
+alias dps='docker ps -a'
 
 # vi mode
 bindkey -v

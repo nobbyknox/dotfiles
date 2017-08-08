@@ -95,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias prettyjson='python -mjson.tool'
 alias dk='docker'
-alias dps='docker ps'
+alias dps='docker ps -a'
 
 # vi mode
 bindkey -v
