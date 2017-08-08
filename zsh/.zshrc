@@ -94,6 +94,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ltt='ls -laht | less -ieFX'
 
 alias prettyjson='python -mjson.tool'
+alias dk='docker'
+alias dps='docker ps'
 
 # vi mode
 bindkey -v
