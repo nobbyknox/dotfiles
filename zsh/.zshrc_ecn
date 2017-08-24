@@ -98,6 +98,8 @@ alias prettyjson='python -mjson.tool'
 alias dk='docker'
 alias dps='docker ps -a'
 alias dkps='docker ps -a'
+alias dkc='docker-compose'
+alias dkcps='docker-compose ps'
 
 # vi mode
 bindkey -v
