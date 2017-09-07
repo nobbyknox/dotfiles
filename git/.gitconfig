@@ -3,7 +3,7 @@
     email = nobbyknox@gmail.com
 [core]
 #    editor = mate -w
-    editor = vim
+    editor = nvim
     autocrlf = input
     excludesfile = /Users/nobby/.gitignore_global
 	quotepath = false
