@@ -57,7 +57,7 @@ plugins=(git osx)
 
 # User configuration
 
-export PATH="/Users/nobby/.nvm/versions/node/v5.2.0/bin:/Users/nobby/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin:/Users/nobby/Apps/mongo/bin"
+export PATH="/Users/nobby/.nvm/versions/node/v5.2.0/bin:/Users/nobby/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin:/Users/nobby/Apps/mongo/bin:/Users/nobby/Library/Python/2.7/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -111,3 +111,6 @@ $ '
 # Node version manager stuff
 export NVM_DIR="/Users/nobby/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+source /Users/nobby/Apps/google-cloud-sdk/completion.zsh.inc
+source /Users/nobby/Apps/google-cloud-sdk/path.zsh.inc
