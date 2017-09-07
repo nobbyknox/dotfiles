@@ -97,6 +97,7 @@ alias prettyjson='python -mjson.tool'
 alias dk='docker'
 alias dps='docker ps -a'
 alias dkps='docker ps -a'
+alias kc='kubectl'
 
 # vi mode
 bindkey -v
