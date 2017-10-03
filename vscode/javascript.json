@@ -33,7 +33,11 @@
 		"prefix": "newapromise",
 		"body": [
 			"return new Promise(async (resolve, reject) => {",
-			"    $1",
+			"    try {",
+			"        $1",
+			"    } catch (err) {",
+			"        reject(err);",
+			"    }",
 			"});"
 		],
 		"description": "Create a new async promise"
