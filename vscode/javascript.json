@@ -28,5 +28,14 @@
 			"});"
 		],
 		"description": "Create a new promise"
+	},
+	"New async promise": {
+		"prefix": "newapromise",
+		"body": [
+			"return new Promise(async (resolve, reject) => {",
+			"    $1",
+			"});"
+		],
+		"description": "Create a new async promise"
 	}
 }
