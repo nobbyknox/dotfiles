@@ -53,7 +53,7 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx)
+plugins=(git osx zsh-completions kubectl)
 
 # User configuration
 
@@ -100,6 +100,7 @@ alias dps='docker ps -a'
 alias dkps='docker ps -a'
 alias dkc='docker-compose'
 alias dkcps='docker-compose ps'
+alias kc='kubectl'
 
 # vi mode
 bindkey -v
@@ -114,3 +115,9 @@ $ '
 # Node Version Manager
 export NVM_DIR="/Users/nobbyk/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/nobbyk/apps/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/nobbyk/apps/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/nobbyk/apps/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/nobbyk/apps/google-cloud-sdk/completion.zsh.inc'; fi
