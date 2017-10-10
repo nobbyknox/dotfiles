@@ -6,19 +6,17 @@
     // Controls the font size in pixels.
     "editor.fontSize": 14,
 
-    // Columns at which to show vertical rulers
-    "editor.rulers": [],
-
     // Controls auto save of dirty files. Accepted values:  "off", "afterDelay", "onFocusChange" (editor loses focus), "onWindowChange" (window loses focus). If set to "afterDelay", you can configure the delay in "files.autoSaveDelay".
     "files.autoSave": "onFocusChange",
 
-    // Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.
-    "window.zoomLevel": 0,
     "git.confirmSync": false,
 
-    "editor.formatOnPaste": true,
     "editor.wordWrap": "off",
     "editor.minimap.renderCharacters": false,
-    "editor.minimap.enabled": true
+    "editor.minimap.enabled": true,
+    "extensions.ignoreRecommendations": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.tabCloseButton": "left",
+    "window.zoomLevel": 0
 }
 
