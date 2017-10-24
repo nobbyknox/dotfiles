@@ -1,0 +1,2 @@
+#!/bin/bash
+youtube-dl --no-playlist $1 $2 $3 $4 $5 $6

@@ -1,0 +1,2 @@
+#!/bin/bash
+youtube-dl --no-playlist -a $1
