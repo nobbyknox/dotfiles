@@ -1,6 +1,8 @@
 #!/bin/bash
 
-while read url; do
-  echo "Downloading $url"
-  aria2c --continue -x 5 $url
-done < $1
+# while read url; do
+#   echo "Downloading $url"
+#   aria2c --continue -x 5 $url
+# done < $1
+
+aria2c --continue -x 5 -j 1 -i $1
