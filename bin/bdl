@@ -5,4 +5,4 @@
 #   aria2c --continue -x 5 $url
 # done < $1
 
-aria2c --continue -x 5 -j 1 -i $1
+aria2c --continue -x 5 -j 1 --check-certificate=false -i $1
