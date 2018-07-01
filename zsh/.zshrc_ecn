@@ -98,8 +98,8 @@ alias prettyjson='python -mjson.tool'
 alias dk='docker'
 alias dps='docker ps -a'
 alias dkps='docker ps -a'
-alias dkc='docker-compose'
-alias dkcps='docker-compose ps'
+alias dc='docker-compose'
+alias dcps='docker-compose ps'
 alias kc='kubectl'
 
 # vi mode
@@ -117,7 +117,22 @@ export NVM_DIR="/Users/nobbyk/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/nobbyk/apps/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/nobbyk/apps/google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '/Users/nobbyk/apps/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/nobbyk/apps/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/nobbyk/apps/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/nobbyk/apps/google-cloud-sdk/completion.zsh.inc'; fi
+# if [ -f '/Users/nobbyk/apps/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/nobbyk/apps/google-cloud-sdk/completion.zsh.inc'; fi
+
+# export PATH=/Users/nobbyk/apps/jdk1.7.0_80/bin:$PATH
+# export JAVA_HOME=/Users/nobbyk/apps/jdk1.7.0_80
+
+# export PATH=/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin:$PATH
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
+
+# export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin:$PATH
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
+
+export JAVACMD=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java
+export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin:$PATH
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
+
+export EDITOR=nvim
