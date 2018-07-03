@@ -128,11 +128,11 @@ export NVM_DIR="/Users/nobbyk/.nvm"
 # export PATH=/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin:$PATH
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
 
+export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin:$PATH
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
+
+# export JAVACMD=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java
 # export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin:$PATH
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
-
-export JAVACMD=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java
-export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
 
 export EDITOR=nvim
