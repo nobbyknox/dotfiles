@@ -136,3 +136,10 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Hom
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
 
 export EDITOR=nvim
+
+# Set Spaceship ZSH as a prompt
+# Install with: npm install -g spaceship-prompt
+# It will create some of the lines below
+autoload -U promptinit; promptinit
+export SPACESHIP_VI_MODE_SHOW=false
+prompt spaceship
