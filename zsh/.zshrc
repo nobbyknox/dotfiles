@@ -53,7 +53,7 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-completions kubectl)
+plugins=(git osx zsh-completions zsh-autosuggestions)
 
 # User configuration
 
@@ -78,21 +78,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# alias l='ls -lh | less -ieFX'
-# alias ll='ls -lah | less -ieFX'
-# alias la='ls -lah | less -ieFX'
-# alias lt='ls -lht | less -ieFX'
-# alias ltt='ls -laht | less -ieFX'
-
 alias prettyjson='python -mjson.tool'
 alias dk='docker'
 alias dps='docker ps -a'
@@ -111,9 +96,22 @@ $ '
 
 export EDITOR=nvim
 
+# AWS config
+export AWS_PROFILE=bookmarkpivot
+
 # Node version manager stuff
 export NVM_DIR="/Users/nobby/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-source /Users/nobby/Apps/google-cloud-sdk/completion.zsh.inc
-source /Users/nobby/Apps/google-cloud-sdk/path.zsh.inc
+# source /Users/nobby/Apps/google-cloud-sdk/completion.zsh.inc
+# source /Users/nobby/Apps/google-cloud-sdk/path.zsh.inc
+
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+export SPACESHIP_VI_MODE_SHOW=false
+export SPACESHIP_DOCKER_SHOW=false
+export SPACESHIP_AWS_SHOW=true
+export SPACESHIP_TIME_SHOW=true
+prompt spaceship
