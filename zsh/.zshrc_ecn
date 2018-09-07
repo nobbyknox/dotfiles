@@ -53,7 +53,7 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-completions kubectl)
+plugins=(git osx zsh-completions zsh-autosuggestions)
 
 # User configuration
 
@@ -102,6 +102,9 @@ alias dc='docker-compose'
 alias dcps='docker-compose ps'
 alias kc='kubectl'
 
+alias jupiter='cd /Users/nobbyk/dev/vbx/jupiter'
+alias wildhammer='cd /Users/nobbyk/dev/vbx/wildhammer'
+
 # vi mode
 bindkey -v
 
@@ -137,9 +140,14 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Hom
 
 export EDITOR=nvim
 
+# auto suggestions
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=5"
+
 # Set Spaceship ZSH as a prompt
 # Install with: npm install -g spaceship-prompt
 # It will create some of the lines below
 autoload -U promptinit; promptinit
 export SPACESHIP_VI_MODE_SHOW=false
+export SPACESHIP_TIME_SHOW=true
+export SPACESHIP_DOCKER_SHOW=false
 prompt spaceship
