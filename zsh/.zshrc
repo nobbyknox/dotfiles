@@ -84,6 +84,12 @@ alias dps='docker ps -a'
 alias dkps='docker ps -a'
 alias kc='kubectl'
 
+alias glasgow='cd /Users/nobby/dev/8lnx/glasgow'
+alias jango='cd /Users/nobby/dev/8lnx/jango'
+alias cloud-city='cd /Users/nobby/dev/8lnx/cloud-city'
+alias landing-pad-nine='cd /Users/nobby/dev/bookmark-pivot/landing-pad-nine'
+alias raxus='cd /Users/nobby/dev/bookmark-pivot/raxus'
+
 # vi mode
 bindkey -v
 
