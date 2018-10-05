@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/nobbyk/.oh-my-zsh
+export ZSH=/home/nobbyk/.oh-my-zsh
 
 DEFAULT_USER="nobbyk"
 
@@ -53,12 +53,17 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-completions zsh-autosuggestions)
+# For Mac OS
+#plugins=(git osx zsh-completions zsh-autosuggestions)
+# For Linux
+plugins=(git zsh-autosuggestions)
 
 # User configuration
 
-export PATH="/Users/nobby/.nvm/versions/node/v5.2.0/bin:/Users/nobbyk/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin"
+# export PATH="/Users/nobby/.nvm/versions/node/v5.2.0/bin:/Users/nobbyk/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+export PATH=/home/nobbyk/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,8 +107,8 @@ alias dc='docker-compose'
 alias dcps='docker-compose ps'
 alias kc='kubectl'
 
-alias jupiter='cd /Users/nobbyk/dev/vbx/jupiter'
-alias wildhammer='cd /Users/nobbyk/dev/vbx/wildhammer'
+alias jupiter='cd /home/nobbyk/dev/vbx/jupiter'
+alias wildhammer='cd /home/nobbyk/dev/vbx/wildhammer'
 
 # vi mode
 bindkey -v
@@ -111,13 +116,9 @@ bindkey -v
 # Include a few functions
 source ~/dotfiles/zsh/.functions.sh
 
-export PROMPT='
-[%m] %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) ⌚ %{$fg_bold[red]%}%*%{$reset_color%}
-$ '
-
-# Node Version Manager
-export NVM_DIR="/Users/nobbyk/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# export PROMPT='
+# [%m] %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) ⌚ %{$fg_bold[red]%}%*%{$reset_color%}
+# $ '
 
 # The next line updates PATH for the Google Cloud SDK.
 # if [ -f '/Users/nobbyk/apps/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/nobbyk/apps/google-cloud-sdk/path.zsh.inc'; fi
@@ -131,21 +132,33 @@ export NVM_DIR="/Users/nobbyk/.nvm"
 # export PATH=/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/bin:$PATH
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home
 
-export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin:$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
+# export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/bin:$PATH
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
 
 # export JAVACMD=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin/java
 # export PATH=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/bin:$PATH
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
 
-export EDITOR=nvim
+export EDITOR=vim
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fpath=($fpath "/home/nobbyk/.zfunctions")
 
 # auto suggestions
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=5"
+# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=5"
 
 # Set Spaceship ZSH as a prompt
 # Install with: npm install -g spaceship-prompt
 # It will create some of the lines below
+#autoload -U promptinit; promptinit
+#export SPACESHIP_VI_MODE_SHOW=false
+#export SPACESHIP_TIME_SHOW=true
+#export SPACESHIP_DOCKER_SHOW=false
+#prompt spaceship
+
+# Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
 export SPACESHIP_VI_MODE_SHOW=false
 export SPACESHIP_TIME_SHOW=true
