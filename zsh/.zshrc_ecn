@@ -66,6 +66,7 @@ plugins=(git zsh-autosuggestions)
 export PATH=/home/nobbyk/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
+source /home/nobbyk/apps/z/z.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
