@@ -1,7 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
     // Controls the font family.
-    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "'Fira Code', Hack, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
 
     // Controls the font size in pixels.
     "editor.fontSize": 14,
@@ -11,12 +12,40 @@
 
     "git.confirmSync": false,
 
+    "editor.formatOnSave": false,
     "editor.wordWrap": "off",
     "editor.minimap.renderCharacters": false,
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     "extensions.ignoreRecommendations": false,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editor.tabCloseButton": "left",
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "cSpell.enabledLanguageIds": [
+        "c",
+        "cpp",
+        "csharp",
+        "go",
+        "handlebars",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "latex",
+        "markdown",
+        "php",
+        "plaintext",
+        "python",
+        "restructuredtext",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "vue",
+        "yml"
+    ],
+    "cSpell.language": ",en",
+
+    // Controls the font size in pixels of the terminal.
+    "terminal.integrated.fontSize": 14,
+    "todohighlight.isEnable": true,
+    "breadcrumbs.enabled": true
 }
 
