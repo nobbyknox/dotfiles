@@ -120,4 +120,5 @@ export SPACESHIP_VI_MODE_SHOW=false
 export SPACESHIP_DOCKER_SHOW=false
 export SPACESHIP_AWS_SHOW=true
 export SPACESHIP_TIME_SHOW=true
+export SPACESHIP_KUBECONTEXT_SHOW=false
 prompt spaceship
