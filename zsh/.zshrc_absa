@@ -100,10 +100,15 @@ source $ZSH/oh-my-zsh.sh
 ################################################################################
 
 bindkey -v
-export EDITOR=nvim
+
+unalias ll
+unalias la
 
 source ~/dotfiles/zsh/.functions.sh
 
-export PATH=$PATH:/home/nobby/apps/sbt/bin
+export EDITOR=nvim
+export PATH=$PATH:/home/nobby/apps/sbt/bin:~/bin:~/.local/bin
+export DOCKER_HOST=tcp://localhost:2375
 
 ################################################################################
+
