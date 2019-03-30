@@ -11,26 +11,30 @@ say_hello()
 }
 
 # deprecated - use ll
-fl()
-{
-    CLICOLOR_FORCE=1 ls -lh $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
-}
+# fl()
+# {
+#     CLICOLOR_FORCE=1 ls -lh $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
+# }
 
 # deprecated - use la
-fla()
-{
-    CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
-}
+# fla()
+# {
+#     CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
+# }
 
 ll()
 {
     CLICOLOR_FORCE=1 ls -lh $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
 }
 
-# deprecated - use la
 la()
 {
     CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX
+}
+
+lll()
+{
+    la $*
 }
 
 top_5()

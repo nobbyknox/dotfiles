@@ -78,6 +78,10 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+unalias ll
+unalias la
+unalias ls
+
 alias prettyjson='python -mjson.tool'
 alias dk='docker'
 alias dps='docker ps -a'
