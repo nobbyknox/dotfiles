@@ -103,6 +103,9 @@ bindkey -v
 
 unalias ll
 unalias la
+unalias ls
+
+alias dk='docker'
 
 source ~/dotfiles/zsh/.functions.sh
 
