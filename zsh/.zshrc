@@ -53,11 +53,13 @@ ZSH_THEME="amuse"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx zsh-completions zsh-autosuggestions)
+# 2019-04-19: Removed zsh-completions
+plugins=(git osx zsh-autosuggestions)
 
 # User configuration
 
 export PATH="/Users/nobby/bin:/Users/nobby/Apps/sbt/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin:/Users/nobby/Library/Python/2.7/bin"
+export PATH=$PATH:/Users/nobby/Apps/gradle-5.4.1/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -78,9 +80,13 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-unalias ll
-unalias la
-unalias ls
+# unalias ll
+# unalias la
+# unalias ls
+
+alias ll='CLICOLOR_FORCE=1 ls -lh $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
+alias la='CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
+alias lll='CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
 
 alias prettyjson='python -mjson.tool'
 alias dk='docker'
