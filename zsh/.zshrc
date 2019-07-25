@@ -93,6 +93,7 @@ alias dk='docker'
 alias dps='docker ps -a'
 alias dkps='docker ps -a'
 alias kc='kubectl'
+alias dc='docker-compose'
 
 alias glasgow='cd /Users/nobby/dev/8lnx/glasgow'
 alias jango='cd /Users/nobby/dev/8lnx/jango'
@@ -132,3 +133,7 @@ export SPACESHIP_AWS_SHOW=true
 export SPACESHIP_TIME_SHOW=true
 export SPACESHIP_KUBECONTEXT_SHOW=false
 prompt spaceship
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/nobby/.sdkman"
+[[ -s "/Users/nobby/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/nobby/.sdkman/bin/sdkman-init.sh"
