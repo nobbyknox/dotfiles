@@ -116,6 +116,9 @@ export EDITOR=nvim
 # AWS config
 export AWS_PROFILE=bookmarkpivot
 
+# Bookmark Pivot environment variables
+export BP_SPRING_PROFILES_ACTIVE=nobby
+
 # Node version manager stuff
 export NVM_DIR="/Users/nobby/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
