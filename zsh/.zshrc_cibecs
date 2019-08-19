@@ -113,7 +113,8 @@ alias lta='ls -lhta | less -ieFX'
 alias dk='docker'
 
 export PATH=$PATH:~/dev/dev-env/bin
-export CIBECS_ENV_SCRIPT=~/dev/devops-config/docker/compose-azure/nobby-env.sh
+# export CIBECS_ENV_SCRIPT=~/dev/devops-config/docker/compose-azure/nobby-env.sh
+export CIBECS_ENV_SCRIPT=/home/nobby/dev/compose-env/nobby-env.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/nobby/.sdkman"
