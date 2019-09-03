@@ -8,9 +8,6 @@ export ZSH="/home/nobby/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# Other themes:
-#   - agnoster
-#   - robbyrussell
 ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
@@ -92,9 +89,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# vi mode
-bindkey -v
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -104,6 +98,13 @@ bindkey -v
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+################################################################################
+# My stuff                                                                     #
+################################################################################
+
+# vi mode
+bindkey -v
+
 source ~/.functions.sh
 
 alias ll='ls -lh | less -ieFX'
@@ -111,10 +112,15 @@ alias la='ls -lha | less -ieFX'
 alias lt='ls -lht | less -ieFX'
 alias lta='ls -lhta | less -ieFX'
 alias dk='docker'
+alias mi='mvn install -Dmaven.test.skip=true -DskipTests -Dmaven.javadoc.skip=true'
 
-export PATH=$PATH:~/dev/dev-env/bin
-# export CIBECS_ENV_SCRIPT=~/dev/devops-config/docker/compose-azure/nobby-env.sh
+export PATH=$PATH:/home/nobby/dev/dev-env/bin
 export CIBECS_ENV_SCRIPT=/home/nobby/dev/compose-env/nobby-env.sh
+export EDITOR=nvim
+
+################################################################################
+# SDKMAN stuff                                                                 #
+################################################################################
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/nobby/.sdkman"
