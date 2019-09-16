@@ -116,6 +116,7 @@ alias mi='mvn install -Dmaven.test.skip=true -DskipTests -Dmaven.javadoc.skip=tr
 
 export PATH=$PATH:/home/nobby/dev/dev-env/bin
 export CIBECS_ENV_SCRIPT=/home/nobby/dev/compose-env/nobby-env.sh
+export CM_API_URL=http://127.0.0.1:8080
 export EDITOR=nvim
 
 ################################################################################
@@ -125,3 +126,7 @@ export EDITOR=nvim
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/nobby/.sdkman"
 [[ -s "/home/nobby/.sdkman/bin/sdkman-init.sh" ]] && source "/home/nobby/.sdkman/bin/sdkman-init.sh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
