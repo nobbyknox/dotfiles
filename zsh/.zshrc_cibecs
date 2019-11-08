@@ -106,18 +106,23 @@ source $ZSH/oh-my-zsh.sh
 bindkey -v
 
 source ~/.functions.sh
+source ~/.aliases.sh
 
 alias ll='ls -lh | less -ieFX'
 alias la='ls -lha | less -ieFX'
 alias lt='ls -lht | less -ieFX'
 alias lta='ls -lhta | less -ieFX'
-alias dk='docker'
-alias mi='mvn install -Dmaven.test.skip=true -DskipTests -Dmaven.javadoc.skip=true'
 
 export PATH=$PATH:/home/nobby/dev/dev-env/bin
-export CIBECS_ENV_SCRIPT=/home/nobby/dev/compose-env/nobby-env.sh
-export CM_API_URL=http://127.0.0.1:8080
 export EDITOR=nvim
+
+################################################################################
+# Cibecs stuff                                                                 #
+################################################################################
+
+export CIBECS_ENV_SCRIPT=/home/nobby/dev/compose-env/nobby-env.sh
+export CM_DOMAIN=localtest.me
+export CM_API_URL=http://127.0.0.1:8080
 
 ################################################################################
 # SDKMAN stuff                                                                 #
