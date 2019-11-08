@@ -52,6 +52,41 @@ net_scan()
     sudo nmap -sP 192.168.10.0/24
 }
 
+to_bp()
+{
+    cd /Users/nobby/dev/bookmark-pivot
+}
+
+to_compose_env()
+{
+    cd /Users/nobby/dev/bookmark-pivot/compose-env
+}
+
+to_cloud_city()
+{
+    cd /Users/nobby/dev/bookmark-pivot/cloud-city
+}
+
+to_death_star()
+{
+    cd /Users/nobby/dev/bookmark-pivot/death-star
+}
+
+to_docs()
+{
+    cd /Users/nobby/dev/bookmark-pivot/docs
+}
+
+to_executor()
+{
+    cd /Users/nobby/dev/bookmark-pivot/executor
+}
+
+j()
+{
+    echo $1
+}
+
 # ------------------------------------------------------------------------------
 # Editing files
 # ------------------------------------------------------------------------------

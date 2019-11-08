@@ -118,6 +118,7 @@ export AWS_PROFILE=bookmarkpivot
 
 # Bookmark Pivot environment variables
 export BP_SPRING_PROFILES_ACTIVE=nobby
+export BP_SPRING_CLOUD_DISCOVERY_URI=http://192.168.10.140:8761/eureka
 
 # Node version manager stuff
 export NVM_DIR="/Users/nobby/.nvm"
