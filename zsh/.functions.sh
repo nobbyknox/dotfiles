@@ -52,32 +52,37 @@ net_scan()
     sudo nmap -sP 192.168.10.0/24
 }
 
-to_bp()
+tbp()
 {
     cd /Users/nobby/dev/bookmark-pivot
 }
 
-to_compose_env()
+tcomposeenv()
 {
     cd /Users/nobby/dev/bookmark-pivot/compose-env
 }
 
-to_cloud_city()
+tcloudcity()
 {
     cd /Users/nobby/dev/bookmark-pivot/cloud-city
 }
 
-to_death_star()
+tdeployment()
+{
+    cd /Users/nobby/dev/bookmark-pivot/deployment
+}
+
+tdeathstar()
 {
     cd /Users/nobby/dev/bookmark-pivot/death-star
 }
 
-to_docs()
+tdocs()
 {
     cd /Users/nobby/dev/bookmark-pivot/docs
 }
 
-to_executor()
+texecutor()
 {
     cd /Users/nobby/dev/bookmark-pivot/executor
 }

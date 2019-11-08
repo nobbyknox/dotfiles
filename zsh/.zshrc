@@ -106,6 +106,7 @@ bindkey -v
 
 # Include a few functions
 source ~/.functions.sh
+# source ~/data/bookmarkpivot/death-star-env.sh
 
 export PROMPT='
 [%m] %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) ⌚ %{$fg_bold[red]%}%*%{$reset_color%}
@@ -117,8 +118,8 @@ export EDITOR=nvim
 export AWS_PROFILE=bookmarkpivot
 
 # Bookmark Pivot environment variables
-export BP_SPRING_PROFILES_ACTIVE=nobby
-export BP_SPRING_CLOUD_DISCOVERY_URI=http://192.168.10.140:8761/eureka
+# export BP_ENV_SCRIPT=/Users/nobby/dev/bookmark-pivot/compose-env/nobby-env.sh
+source /Users/nobby/dev/bookmark-pivot/compose-env/nobby-env.sh
 
 # Node version manager stuff
 export NVM_DIR="/Users/nobby/.nvm"
