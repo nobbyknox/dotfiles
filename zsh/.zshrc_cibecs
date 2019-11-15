@@ -113,7 +113,7 @@ alias la='ls -lha | less -ieFX'
 alias lt='ls -lht | less -ieFX'
 alias lta='ls -lhta | less -ieFX'
 
-export PATH=$PATH:/home/nobby/dev/dev-env/bin
+export PATH=$PATH:/home/nobby/dev/dev-env/bin:/home/nobby/dotfiles/bin
 export EDITOR=nvim
 
 ################################################################################
