@@ -58,7 +58,7 @@ plugins=(git osx zsh-autosuggestions)
 
 # User configuration
 
-export PATH="/Users/nobby/bin:/Users/nobby/Apps/sbt/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin:/Users/nobby/Library/Python/2.7/bin"
+export PATH="/Users/nobby/dotfiles/bin:/Users/nobby/bin:/Applications/MacVim.app/Contents/MacOS:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/aria2/bin"
 export PATH=$PATH:/Users/nobby/Apps/gradle-5.4.1/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 

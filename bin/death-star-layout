@@ -1,0 +1,52 @@
+#!/bin/bash
+
+tmux new-session -d -s bookmarkpivot
+tmux rename-window -t bookmarkpivot:1 'home'
+
+tmux new-window -t bookmarkpivot
+tmux rename-window -t bookmarkpivot:2 'compose-env'
+tmux send-keys -t bookmarkpivot:2 'cd ~/dev/bookmark-pivot/compose-env' Enter
+
+tmux new-window -t bookmarkpivot
+tmux rename-window -t bookmarkpivot:3 'executor'
+tmux send-keys -t bookmarkpivot:3 'cd ~/dev/bookmark-pivot/executor' Enter
+
+tmux new-window -t bookmarkpivot
+tmux rename-window -t bookmarkpivot:4 'config+disco'
+
+#tmux splitw -h -p 50 -t bookmarkpivot:4.1
+#tmux splitw -v -p 50 -t bookmarkpivot:4.1
+#tmux splitw -v -p 50 -t bookmarkpivot:4.3
+
+tmux split-window -t bookmarkpivot:4
+tmux split-window -t bookmarkpivot:4
+tmux split-window -t bookmarkpivot:4
+tmux select-layout -t bookmarkpivot:4 tiled
+
+tmux send-keys -t bookmarkpivot:4.1 'cd ~/dev/bookmark-pivot/death-star; clear' Enter
+tmux send-keys -t bookmarkpivot:4.2 'cd ~/dev/bookmark-pivot/death-star; clear' Enter
+tmux send-keys -t bookmarkpivot:4.3 'cd ~/dev/bookmark-pivot/death-star; clear' Enter
+tmux send-keys -t bookmarkpivot:4.4 'cd ~/dev/bookmark-pivot/death-star; clear' Enter
+
+tmux new-window -t bookmarkpivot
+tmux rename-window -t bookmarkpivot:5 'sec+bookmark'
+#tmux splitw -v -p 50 -t bookmarkpivot
+tmux split-window -t bookmarkpivot:5
+tmux send-keys -t bookmarkpivot:5.1 'cd ~/dev/bookmark-pivot/death-star; clear' Enter
+tmux send-keys -t bookmarkpivot:5.2 'cd ~/dev/bookmark-pivot/death-star; clear' Enter
+
+tmux new-window -t bookmarkpivot
+tmux rename-window -t bookmarkpivot:6 'notif+scryer'
+#tmux splitw -v -p 50 -t bookmarkpivot
+tmux split-window -t bookmarkpivot:6
+tmux send-keys -t bookmarkpivot:6.1 'cd ~/dev/bookmark-pivot/death-star; clear' Enter
+tmux send-keys -t bookmarkpivot:6.2 'cd ~/dev/bookmark-pivot/death-star; clear' Enter
+
+tmux new-window -t bookmarkpivot
+tmux rename-window -t bookmarkpivot:7 'cloud city'
+tmux splitw -h -p 50 -t bookmarkpivot:7
+tmux send-keys -t bookmarkpivot:7.1 'cd ~/dev/bookmark-pivot/cloud-city; clear' Enter
+tmux send-keys -t bookmarkpivot:7.2 'cd ~/dev/bookmark-pivot/cloud-city; clear' Enter
+
+tmux attach
+
