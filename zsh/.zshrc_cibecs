@@ -108,10 +108,10 @@ bindkey -v
 source ~/.functions.sh
 source ~/.aliases.sh
 
-alias ll='ls -lh | less -ieFX'
-alias la='ls -lha | less -ieFX'
-alias lt='ls -lht | less -ieFX'
-alias lta='ls -lhta | less -ieFX'
+# alias ll='ls -lh | less -ieFX'
+# alias la='ls -lha | less -ieFX'
+# alias lt='ls -lht | less -ieFX'
+# alias lta='ls -lhta | less -ieFX'
 
 export PATH=$PATH:/home/nobby/dev/dev-env/bin:/home/nobby/dotfiles/bin
 export EDITOR=nvim
@@ -123,6 +123,12 @@ export EDITOR=nvim
 export CIBECS_ENV_SCRIPT=/home/nobby/dev/compose-env/nobby-env.sh
 export CM_DOMAIN=localtest.me
 export CM_API_URL=http://127.0.0.1:8080
+
+################################################################################
+# Bookmark Pivot stuff                                                         #
+################################################################################
+
+source /home/nobby/dev/personal/bookmarkpivot/compose-env/nobby-mint.sh
 
 ################################################################################
 # SDKMAN stuff                                                                 #
