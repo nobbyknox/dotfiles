@@ -142,3 +142,5 @@ prompt spaceship
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/nobby/.sdkman"
 [[ -s "/Users/nobby/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/nobby/.sdkman/bin/sdkman-init.sh"
+
+source /Users/nobby/Library/Preferences/org.dystroy.broot/launcher/bash/br
