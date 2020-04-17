@@ -84,44 +84,50 @@ source $ZSH/oh-my-zsh.sh
 # unalias la
 # unalias ls
 
-alias ll='CLICOLOR_FORCE=1 ls -lh $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
-alias la='CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
-alias lll='CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
+# alias ll='CLICOLOR_FORCE=1 ls -lh $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
+# alias la='CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
+# alias lll='CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
 
-alias prettyjson='python -mjson.tool'
-alias dk='docker'
-alias dps='docker ps -a'
-alias dkps='docker ps -a'
-alias kc='kubectl'
-alias dc='docker-compose'
+# alias prettyjson='python -mjson.tool'
+# alias dk='docker'
+# alias dps='docker ps -a'
+# alias dkps='docker ps -a'
+# alias kc='kubectl'
+# alias dc='docker-compose'
 
-alias glasgow='cd /Users/nobby/dev/8lnx/glasgow'
-alias jango='cd /Users/nobby/dev/8lnx/jango'
-alias cloud-city='cd /Users/nobby/dev/8lnx/cloud-city'
-alias landing-pad-nine='cd /Users/nobby/dev/bookmark-pivot/landing-pad-nine'
-alias raxus='cd /Users/nobby/dev/bookmark-pivot/raxus'
+# alias glasgow='cd /Users/nobby/dev/8lnx/glasgow'
+# alias jango='cd /Users/nobby/dev/8lnx/jango'
+# alias cloud-city='cd /Users/nobby/dev/8lnx/cloud-city'
+# alias landing-pad-nine='cd /Users/nobby/dev/bookmark-pivot/landing-pad-nine'
+# alias raxus='cd /Users/nobby/dev/bookmark-pivot/raxus'
 
 # vi mode
 bindkey -v
 
 # Include a few functions
-source ~/.functions.sh
+source ~/dotfiles/zsh/.functions.sh
+
+# Load aliases
+source ~/dotfiles/zsh/.aliases.sh
 # source ~/data/bookmarkpivot/death-star-env.sh
 
-export PROMPT='
-[%m] %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) ⌚ %{$fg_bold[red]%}%*%{$reset_color%}
-$ '
+# export PROMPT='
+# [%m] %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%}$(git_prompt_info) ⌚ %{$fg_bold[red]%}%*%{$reset_color%}
+# $ '
 
 export EDITOR=nvim
 
 # AWS config
 export AWS_PROFILE=bookmarkpivot
 
+################################################################################
 # Bookmark Pivot environment variables
-# export BP_ENV_SCRIPT=/Users/nobby/dev/bookmark-pivot/compose-env/nobby-env.sh
+################################################################################
 source /Users/nobby/dev/bookmark-pivot/compose-env/nobby-env.sh
 
+################################################################################
 # Node version manager stuff
+################################################################################
 export NVM_DIR="/Users/nobby/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
@@ -131,14 +137,19 @@ export NVM_DIR="/Users/nobby/.nvm"
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
 
 # Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-export SPACESHIP_VI_MODE_SHOW=false
-export SPACESHIP_DOCKER_SHOW=false
-export SPACESHIP_AWS_SHOW=true
-export SPACESHIP_TIME_SHOW=true
-export SPACESHIP_KUBECONTEXT_SHOW=false
-prompt spaceship
+# autoload -U promptinit; promptinit
+# export SPACESHIP_VI_MODE_SHOW=false
+# export SPACESHIP_DOCKER_SHOW=false
+# export SPACESHIP_AWS_SHOW=true
+# export SPACESHIP_TIME_SHOW=true
+# export SPACESHIP_KUBECONTEXT_SHOW=false
+# prompt spaceship
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+################################################################################
+# SDK Man
+# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+################################################################################
 export SDKMAN_DIR="/Users/nobby/.sdkman"
 [[ -s "/Users/nobby/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/nobby/.sdkman/bin/sdkman-init.sh"
+
+# source /Users/nobby/Library/Preferences/org.dystroy.broot/launcher/bash/br

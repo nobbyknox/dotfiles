@@ -1,12 +1,20 @@
-alias ll='CLICOLOR_FORCE=1 ls -lh $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
-alias la='CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
-alias lll='CLICOLOR_FORCE=1 ls -lah $1 $2 $3 $4 $5 $6 $7 $8 $9 | less -ieFX'
+# Directory listing
+alias ll='ls -lh'
+alias la='ls -lah'
+alias lt='ls -lht'
+alias lat='ls -laht'
 
-# GIT aliases
-alias git-br='git --no-pager branch'
-alias git-st='git status'
-alias git-ci='git commit'
-alias git-hist='git hist'
+# Git
+alias gbr='git --no-pager branch'
+alias gst='git status'
+alias gci='git commit --verbose'
+alias ghist='git hist'
 
+# Docker and friends
 alias dk='docker'
+alias dc='docker-compose'
+alias kc='kubectl'
+
+# Maven
 alias mi='mvn install -Dmaven.test.skip=true -DskipTests -Dmaven.javadoc.skip=true'
+
