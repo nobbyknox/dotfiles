@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z $1 ]; then
+    echo Give the branch name, dumbass
+    exit 1
+fi
+
+git checkout -b $1
