@@ -161,3 +161,12 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 
 bindsym $mod+shift+greater move workspace to output right
 bindsym $mod+shift+less move workspace to output left
+
+################################################################################
+# Lock the screen: control+win+alt+l
+#
+# Colours - https://www.asciitable.it/colori-html
+# - 173f5f - dark blue
+# - 808000 - olive
+################################################################################
+bindsym control+$mod+Mod1+l exec i3lock -c 173f5f -f
