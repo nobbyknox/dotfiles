@@ -122,7 +122,10 @@ export EDITOR=nvim
 
 export CIBECS_ENV_SCRIPT=/home/nobby/dev/compose-env/nobby-env.sh
 export CM_DOMAIN=localtest.me
+# export CM_TENANT=demo
 export CM_API_URL=http://127.0.0.1:8080
+
+source /home/nobby/dev/compose-env/datadog-agent-env.sh
 
 ################################################################################
 # Bookmark Pivot stuff                                                         #

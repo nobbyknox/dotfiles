@@ -120,7 +120,7 @@ bind p paste-buffer
 # source ~/dotfiles/tmux/.tmux-theme.sh
 #source /Users/nobby/.tmux-themepack/default.tmuxtheme
 #source-file "/Users/nobby/.tmux-themepack/powerline/default/blue.tmuxtheme"
-source-file "${HOME}/.tmux-themepack/powerline/block/orange.tmuxtheme"
+source-file "${HOME}/.tmux-themepack/powerline/block/blue.tmuxtheme"
 
 ##############################
 ### Plugins                ###
