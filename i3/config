@@ -162,6 +162,9 @@ bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
+# The stuff above does not work. Try this then:
+# xrandr --output eDP-1-1 --brightness 0.5
+
 bindsym $mod+shift+greater move workspace to output right
 bindsym $mod+shift+less move workspace to output left
 
