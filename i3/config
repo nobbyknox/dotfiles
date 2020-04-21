@@ -174,5 +174,8 @@ bindsym $mod+shift+less move workspace to output left
 # Colours - https://www.asciitable.it/colori-html
 # - 173f5f - dark blue
 # - 808000 - olive
+#
+# Images:
+# - i3lock -i burger.png -t
 ################################################################################
 bindsym control+$mod+Mod1+l exec i3lock -c 173f5f -f
