@@ -113,7 +113,7 @@ source ~/.aliases.sh
 # alias lt='ls -lht | less -ieFX'
 # alias lta='ls -lhta | less -ieFX'
 
-export PATH=$PATH:/home/nobby/dev/dev-env/bin:/home/nobby/dotfiles/bin
+export PATH=$PATH:/home/nobby/dev/dev-env/bin:/home/nobby/dotfiles/bin:/home/nobby/Applications/jetbrains-toolbox-1.16.6319
 export EDITOR=nvim
 
 ################################################################################
