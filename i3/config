@@ -178,4 +178,4 @@ bindsym $mod+shift+less move workspace to output left
 # Images:
 # - i3lock -i burger.png -t
 ################################################################################
-bindsym control+$mod+Mod1+l exec i3lock -c 173f5f -f
+bindsym control+$mod+Mod1+l exec i3lock -c 565051 -f
