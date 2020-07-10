@@ -534,6 +534,9 @@ exec --no-startup-id $i3-wm.program.3
 bindsym $mod+shift+greater move workspace to output right
 bindsym $mod+shift+less move workspace to output left
 
+## Exit App // <Alt> F4 ##
+bindsym $alt+F4 [con_id="__focused__"] kill
+
 set $greenclip /home/nobby/Applications/greenclip/greenclip
 bindsym $mod+Control+Insert exec rofi -modi "clipboard:$greenclip print" -show clipboard
 exec --no-startup-id $greenclip daemon

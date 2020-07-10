@@ -116,6 +116,9 @@ source ~/.aliases.sh
 export PATH=$PATH:/home/nobby/dev/dev-env/bin:/home/nobby/dotfiles/bin:/home/nobby/Applications/jetbrains-toolbox-1.16.6319:/home/nobby/Applications/greenclip
 export EDITOR=nvim
 
+# AWS config
+export AWS_PROFILE=bookmarkpivot
+
 ################################################################################
 # Cibecs stuff                                                                 #
 ################################################################################

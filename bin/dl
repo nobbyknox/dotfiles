@@ -1,2 +1,2 @@
 #!/bin/sh
-aria2c --continue -x 5 $1
+aria2c --continue -x 5 $1 --check-certificate=false
