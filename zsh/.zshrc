@@ -123,7 +123,8 @@ export AWS_PROFILE=bookmarkpivot
 ################################################################################
 # Bookmark Pivot environment variables
 ################################################################################
-source /Users/nobby/dev/bookmark-pivot/compose-env/nobby-env.sh
+# source /Users/nobby/dev/bookmark-pivot/compose-env/nobby-env.sh
+export BOOKMARK_PIVOT_ENV_SCRIPT=/Users/nobby/dev/bookmark-pivot/outer-rim/compose-env/nobby-env.sh
 
 ################################################################################
 # Node version manager stuff
